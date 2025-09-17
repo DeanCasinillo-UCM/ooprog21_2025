@@ -1,0 +1,62 @@
+public class TableAndChairs {
+    public static void main(String[] args) {
+        System.out.println("X                      X");
+        System.out.println("X                      X");
+        System.out.println("X     XXXXXXXXXX       X");
+        System.out.println("XXXXX X        X XXXXXXX");
+        System.out.println("X   X X        X X     X");
+        System.out.println("X   X X        X X     X");
+    }
+}
+
+
+public class FavoriteSong {
+    public static void main(String[] args) {
+        System.out.println("🎵 Imagine there's no heaven");
+        System.out.println("It's easy if you try");
+        System.out.println("No hell below us");
+        System.out.println("Above us, only sky 🎵");
+    }
+}
+
+import javax.swing.JOptionPane;
+import javax.swing.SwingUtilities;
+import java.awt.GraphicsEnvironment;
+
+public class FirstDialog {
+    public static void main(String[] args) {
+        String message = "First Java Dialog Program";
+
+        // If running in a headless environment (no display available), print to console.
+        if (GraphicsEnvironment.isHeadless()) {
+            System.out.println(message);
+            System.exit(0);
+        }
+
+        // Otherwise show the GUI dialog on the Event Dispatch Thread
+        SwingUtilities.invokeLater(() -> {
+            JOptionPane.showMessageDialog(null, message, "FirstDialog", JOptionPane.INFORMATION_MESSAGE);
+            System.exit(0);
+        });
+    }
+}
+
+public class Comments {
+    public static void main(String[] args) {
+        // This is a single-line comment
+        
+        /* 
+         * This is a multi-line comment.
+         * It can span multiple lines.
+         */
+
+        /**
+         * This is a documentation comment.
+         * It is used to generate documentation with javadoc.
+         */
+        System.out.println("This program demonstrates 3 types of comments in Java!");
+    }
+}
+
+
+
